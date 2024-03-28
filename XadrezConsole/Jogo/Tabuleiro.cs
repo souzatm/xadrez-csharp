@@ -19,5 +19,10 @@ namespace XadrezConsole.Jogo
             Colunas = colunas;
             Pecas = new Peca[Linhas, Colunas];
         }
+
+        public Peca mostraPeca(int linha, int coluna) 
+        { 
+            return Pecas[linha, coluna];
+        }
     }
 }
