@@ -1,4 +1,8 @@
-﻿namespace XadrezConsole.Xadrez
+﻿
+
+using XadrezConsole.Jogo;
+
+namespace XadrezConsole.Xadrez
 {
     class PosicaoXadrez
     {
@@ -9,6 +13,11 @@
         {
             Coluna = coluna;
             Linha = linha;
+        }
+
+        public Posicao toPosicao()
+        {
+            return new Posicao(8 - Linha, Coluna - 'a');
         }
 
         public override string ToString()
