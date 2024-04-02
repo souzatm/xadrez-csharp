@@ -46,6 +46,19 @@ namespace XadrezConsole.Jogo
             p.Posicao = posicao;
         }
 
+        public Peca retirarPeca(Posicao posicao)
+        {
+            if (mostraPeca(posicao) == null)
+            {
+                return null;
+            }
+            Peca aux = mostraPeca(posicao);
+            aux.Posicao = null;
+            Pecas[posicao.Linha, posicao.Coluna] = null;
+            return aux;
+
+        }
+
         public bool posicaoValida(Posicao posicao)
         {
             if (posicao.Linha <0 || posicao.Linha >= Linhas || posicao.Coluna < 0 || posicao.Coluna >= Colunas)

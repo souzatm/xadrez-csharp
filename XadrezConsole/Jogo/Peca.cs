@@ -20,5 +20,10 @@ namespace XadrezConsole.Jogo
             Cor = cor;
             qteMovimentos = 0;
         }
+
+        public void incrementarQteMovimentos()
+        {
+            qteMovimentos++;
+        }
     }
 }
