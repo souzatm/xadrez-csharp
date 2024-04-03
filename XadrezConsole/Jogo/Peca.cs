@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XadrezConsole.Jogo
 {
-    class Peca
+    abstract class Peca
     {
         public Posicao Posicao { get; set; }
         public Cor Cor { get; set; }
@@ -25,5 +25,7 @@ namespace XadrezConsole.Jogo
         {
             qteMovimentos++;
         }
+
+        public abstract bool[,] movimentosPossiveis();
     }
 }
