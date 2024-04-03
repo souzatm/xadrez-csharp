@@ -11,8 +11,8 @@ namespace XadrezConsole.Xadrez
     class PartidaDeXadrez
     {
         public Tabuleiro Tabuleiro { get; private set; }
-        private int Turno;
-        private Cor jogadorAtual;
+        public int Turno { get; private set; }
+        public Cor jogadorAtual { get; private set; }
         public bool Terminada { get; private set; }
 
         public PartidaDeXadrez()
@@ -30,6 +30,49 @@ namespace XadrezConsole.Xadrez
             p.incrementarQteMovimentos();
             Peca pecaCapturada = Tabuleiro.retirarPeca(destino);
             Tabuleiro.colocarPeca(p, destino);
+        }
+
+        public void realizaJogada(Posicao origem, Posicao destino)
+        {
+            executaMovimento(origem,destino);
+            Turno++;
+            mudaJogador();
+        }
+
+        public void validarPosicaoDeOrigem(Posicao origem)
+        {
+            if (Tabuleiro.mostraPeca(origem) == null)
+            {
+                throw new TabuleiroException("Não existe peça na posição escolhida!");
+            }
+            if(jogadorAtual != Tabuleiro.mostraPeca(origem).Cor)
+            {
+                throw new TabuleiroException("A peça de origem escolhida não é sua!");
+            }
+            if (!Tabuleiro.mostraPeca(origem).existeMovimentosPossiveis())
+            {
+                throw new TabuleiroException("Não há movimentos possíveis para a peça de origem escolhida!");
+            }
+        }
+
+        public void validarPosicaoDeDestino(Posicao origem, Posicao destino)
+        {
+            if (!Tabuleiro.mostraPeca(origem).podeMoverPara(destino))
+            {
+                throw new TabuleiroException("Posição de destino inválida!");
+            }
+        }
+
+        private void mudaJogador()
+        {
+            if(jogadorAtual == Cor.Branca)
+            {
+                jogadorAtual = Cor.Preta;
+            }
+            else
+            {
+                jogadorAtual = Cor.Branca;
+            }
         }
 
         private void colocarPecas()
