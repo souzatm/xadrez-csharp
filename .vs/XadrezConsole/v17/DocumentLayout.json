@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{AFF6FCD0-C8A1-4B37-BC86-9792E9D217C0}|XadrezConsole\\XadrezConsole.csproj|solutionrelative:xadrezconsole\\xadrez\\partidadexadrez.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AFF6FCD0-C8A1-4B37-BC86-9792E9D217C0}|XadrezConsole\\XadrezConsole.csproj|c:\\users\\tsouz\\source\\repos\\xadrezconsole\\xadrezconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFF6FCD0-C8A1-4B37-BC86-9792E9D217C0}|XadrezConsole\\XadrezConsole.csproj|solutionrelative:xadrezconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFF6FCD0-C8A1-4B37-BC86-9792E9D217C0}|XadrezConsole\\XadrezConsole.csproj|c:\\users\\tsouz\\source\\repos\\xadrezconsole\\xadrezconsole\\xadrez\\rei.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFF6FCD0-C8A1-4B37-BC86-9792E9D217C0}|XadrezConsole\\XadrezConsole.csproj|solutionrelative:xadrezconsole\\xadrez\\rei.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFF6FCD0-C8A1-4B37-BC86-9792E9D217C0}|XadrezConsole\\XadrezConsole.csproj|c:\\users\\tsouz\\source\\repos\\xadrezconsole\\xadrezconsole\\xadrez\\torre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFF6FCD0-C8A1-4B37-BC86-9792E9D217C0}|XadrezConsole\\XadrezConsole.csproj|solutionrelative:xadrezconsole\\xadrez\\torre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFF6FCD0-C8A1-4B37-BC86-9792E9D217C0}|XadrezConsole\\XadrezConsole.csproj|c:\\users\\tsouz\\source\\repos\\xadrezconsole\\xadrezconsole\\xadrez\\peao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFF6FCD0-C8A1-4B37-BC86-9792E9D217C0}|XadrezConsole\\XadrezConsole.csproj|solutionrelative:xadrezconsole\\xadrez\\peao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,16 +38,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tsouz\\source\\repos\\XadrezConsole\\XadrezConsole\\Program.cs",
+              "RelativeDocumentMoniker": "XadrezConsole\\Program.cs",
+              "ToolTip": "C:\\Users\\tsouz\\source\\repos\\XadrezConsole\\XadrezConsole\\Program.cs",
+              "RelativeToolTip": "XadrezConsole\\Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T16:51:20.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Torre.cs",
+              "DocumentMoniker": "C:\\Users\\tsouz\\source\\repos\\XadrezConsole\\XadrezConsole\\Xadrez\\Torre.cs",
+              "RelativeDocumentMoniker": "XadrezConsole\\Xadrez\\Torre.cs",
+              "ToolTip": "C:\\Users\\tsouz\\source\\repos\\XadrezConsole\\XadrezConsole\\Xadrez\\Torre.cs",
+              "RelativeToolTip": "XadrezConsole\\Xadrez\\Torre.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T16:39:25.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rei.cs",
+              "DocumentMoniker": "C:\\Users\\tsouz\\source\\repos\\XadrezConsole\\XadrezConsole\\Xadrez\\Rei.cs",
+              "RelativeDocumentMoniker": "XadrezConsole\\Xadrez\\Rei.cs",
+              "ToolTip": "C:\\Users\\tsouz\\source\\repos\\XadrezConsole\\XadrezConsole\\Xadrez\\Rei.cs",
+              "RelativeToolTip": "XadrezConsole\\Xadrez\\Rei.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAYwFgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T16:11:07.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Peao.cs",
               "DocumentMoniker": "C:\\Users\\tsouz\\source\\repos\\XadrezConsole\\XadrezConsole\\Xadrez\\Peao.cs",
               "RelativeDocumentMoniker": "XadrezConsole\\Xadrez\\Peao.cs",
-              "ToolTip": "C:\\Users\\tsouz\\source\\repos\\XadrezConsole\\XadrezConsole\\Xadrez\\Peao.cs*",
-              "RelativeToolTip": "XadrezConsole\\Xadrez\\Peao.cs*",
+              "ToolTip": "C:\\Users\\tsouz\\source\\repos\\XadrezConsole\\XadrezConsole\\Xadrez\\Peao.cs",
+              "RelativeToolTip": "XadrezConsole\\Xadrez\\Peao.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-08T15:36:43.059Z",
@@ -43,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Tela.cs",
               "DocumentMoniker": "C:\\Users\\tsouz\\source\\repos\\XadrezConsole\\XadrezConsole\\Tela.cs",
               "RelativeDocumentMoniker": "XadrezConsole\\Tela.cs",
@@ -55,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Peca.cs",
               "DocumentMoniker": "C:\\Users\\tsouz\\source\\repos\\XadrezConsole\\XadrezConsole\\Jogo\\Peca.cs",
               "RelativeDocumentMoniker": "XadrezConsole\\Jogo\\Peca.cs",
@@ -73,7 +124,7 @@
               "RelativeDocumentMoniker": "XadrezConsole\\Xadrez\\PartidaDeXadrez.cs",
               "ToolTip": "C:\\Users\\tsouz\\source\\repos\\XadrezConsole\\XadrezConsole\\Xadrez\\PartidaDeXadrez.cs",
               "RelativeToolTip": "XadrezConsole\\Xadrez\\PartidaDeXadrez.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAqwPgAAABAAAAA",
+              "ViewState": "AQIAAAcBAAAAAAAAAAAIwBQBAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-05T15:47:08.49Z",
               "EditorCaption": ""
