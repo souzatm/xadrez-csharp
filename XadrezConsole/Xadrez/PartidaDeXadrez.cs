@@ -68,8 +68,15 @@ class PartidaDeXadrez
             Xeque = false;
         }
 
-        Turno++;
-        mudaJogador();
+        if (testeXequeMate(adversaria(JogadorAtual)))
+        {
+            Terminada = true;
+        }
+        else
+        {
+            Turno++;
+            mudaJogador();
+        }
     }
     public void validarPosicaoDeOrigem(Posicao pos)
     {
@@ -172,11 +179,43 @@ class PartidaDeXadrez
         return false;
     }
 
+    public bool testeXequeMate(Cor cor)
+    {
+        if (!estaEmXeque(cor))
+        {
+            return false;
+        }
+        foreach(Peca x in pecasEmJogo(cor))
+        {
+            bool[,] mat = x.movimentosPossiveis();
+            for (int i = 0; i<Tabuleiro.Linhas; i++)
+            {
+                for (int j = 0;j<Tabuleiro.Colunas; j++)
+                {
+                    if (mat[i, j])
+                    {
+                        Posicao origem = x.Posicao;
+                        Posicao destino = new Posicao(i, j);
+                        Peca pecaCapturada = executaMovimento(origem, destino);
+                        bool testeXeque = estaEmXeque(cor);
+                        desfazMovimento(origem, destino, pecaCapturada);
+                        if (!testeXeque)
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+        return true;
+    }
+
     public void colocarNovaPeca(char coluna, int linha, Peca peca)
     {
         Tabuleiro.colocarPeca(peca, new PosicaoXadrez(coluna, linha).toPosicao());
         Pecas.Add(peca);
     }
+
     private void colocarPecas()
     {
         colocarNovaPeca('c', 1, new Torre(Tabuleiro, Cor.Branca));
